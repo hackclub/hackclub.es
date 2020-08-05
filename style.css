@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Phantom Sans";
+    src: url("https://hackclub.com/fonts/Phantom_Sans_0.6/Regular.woff") format("woff"), url("https://hackclub.com/fonts/Phantom_Sans_0.6/Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Phantom Sans";
+    src: url("https://hackclub.com/fonts/Phantom_Sans_0.6/Bold.woff") format("woff"), url("https://hackclub.com/fonts/Phantom_Sans_0.6/Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    font-size: 4rem;
+    margin: 1rem 0px;
+}
+h2{
+    font-size: 3rem;
+    margin: 1rem 0px;
+}
+h2.cursive{
+    font-weight: 400;
+    font-family: "Shrikhand","Phantom Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+h3{
+    font-size: 2rem;
+    font-family: "Phantom Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    margin: 1rem 0px;
+}
+p{
+    font-size: 1.5rem;
+}
+img{
+    max-width: 100%;
+}
+
+a.button{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.125);
+    padding: 16px;
+    color: inherit ;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 100px;
+}
+
+#navbar{
+    height: 65px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    background-color: rgba( 255, 255, 255, 0.75 );
+    backdrop-filter: saturate(180%) blur(20px);
+    padding: 0px calc(50vw - 600px);
+    padding-right: calc(50vw - 600px + 172px);
+}
+#navbar #hackclubcom{
+    height: 64px;
+    width: 172px;
+    display: inline-block;
+    background-image: url(https://assets.hackclub.com/flag-orpheus-top.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#navbar nav{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+#navbar nav a{
+    flex: 1;
+    text-decoration: none;
+    text-align: center;
+    color: #1D201D;
+}
+
+article.container section{
+    color: inherit;
+    max-width: 48rem;
+    width: 100%;
+    margin: auto;
+    padding: 16px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+article.container #hero{
+    width: 100%;
+    height: 60vh;
+    background-image: url(https://cdn.glitch.com/f0afe4d3-a031-4c0e-8dd5-766cd9ae1e8b%2Ftea_team.jpg?1550999670860);
+}
+
+article.container #scrapbook-cont{
+    padding: 2rem 0rem;
+    background-color: white;
+    color: #1D201D;
+}
+
+article.container #scrapbook-cont section{
+    display: flex;
+    max-width: 100%;
+}
+
+article.container #scrapbook-cont section > .example{
+    flex: 1;
+    margin: 8px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.125);
+    background-size: cover;
+    background-position: center;
+}
+article.container #scrapbook-cont section > .example:hover{
+    transform: scale(1.0625);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.0625), 0 8px 12px rgba(0,0,0,0.125);
+}
+article.container #scrapbook-cont section > *:first-child{
+    flex: 2;
+}
+
+article.container #slack-cont{
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+article.container #slack-cont video, article.container #slack-cont #background{
+    position: absolute;
+    height: 100%;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+article.container #slack-cont #background{
+    width: 100%;
+    background: radial-gradient( ellipse farthest-corner at top left, #00A4FF, #C210FF);
+    opacity: 0.75;
+}
